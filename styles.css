@@ -1,0 +1,77 @@
+:root {
+  /* Colors */
+  --clr-primary-50: #f1f6fd;
+  --clr-primary-100: #dfecfa;
+  --clr-primary-200: #c7def6;
+  --clr-primary-300: #a0c9f0;
+  --clr-primary-400: #73abe7;
+  --clr-primary-500: #528ddf;
+  --clr-primary-600: #4476d4;
+  --clr-primary-700: #345ec1;
+  --clr-primary-800: #304e9d;
+  --clr-primary-900: #2b437d;
+  --clr-primary-950: #1f2b4c;
+}
+
+body {
+  background: linear-gradient(315deg, var(--clr-primary-700), var(--clr-primary-400));
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--clr-primary-50);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  background-color: var(--clr-primary-50);
+  border: 2px solid var(--clr-primary-950);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: large;
+  color: var(--clr-primary-950);
+}
+
+.card input {
+  width: 250px;
+  height: 35px;
+  font-size: large;
+}
+
+.card button {
+  width: 100px;
+  height: 35px;
+  background-color: var(--clr-primary-600);
+  border: 1px solid var(--clr-primary-800);
+  border-radius: 5px;
+  color: var(--clr-primary-50);
+  font-weight: bold;
+}
+
+.card button:hover {
+  background-color: var(--clr-primary-500);
+}
+
+.card button:active {
+  background-color: var(--clr-primary-700);
+}
+
+.valid {
+  color: var(--clr-primary-950);
+}
+
+.invalid {
+  color: #9d4330;
+}
